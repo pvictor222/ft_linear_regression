@@ -3,5 +3,5 @@
 def read_data(csv):
     f = open(csv, "r")
     temp = f.read().split()
-    data = [x.split(',') for x in temp]
+    data = [x.split(';') for x in temp]
     return (data)

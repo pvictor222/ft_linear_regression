@@ -4,7 +4,7 @@ from src.gradient_descent import gradient_descent
 from src.data_visualisation import data_visualisation
 
 # initializing variables
-theta_0 = 0
+theta_0 = 10000
 theta_1 = 0
 prev_cost = -1
 cost = -3
