@@ -22,6 +22,8 @@ def data_visualisation(data, theta_0, theta_1):
     x_values = [x1, x2]
     y_values = [y1, y2]
     #       inserting it in the graph
-    plt.plot(x_values, y_values, color='pink')
+    legend = 'y = '+str(theta_1)+' * x + '+str(theta_0)
+    plt.plot(x_values, y_values, color='pink', label=legend)
+    plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left', borderaxespad=0.)
     #   display the graph
     plt.show()
