@@ -17,9 +17,14 @@ if __name__ == '__main__':
     #mileages to delete?
     mileages = [[1, x[0]] for x in data]
     m = len(data)
+    max_iterations = input("Enter the maximum number of iterations (1000 if not specified): ")
+    if max_iterations == '':
+        max_iterations = int(1000)
+    else:
+        max_iterations = int(max_iterations)
 
     # Gradient descent
-    gradient_result = gradient_descent(cost, prev_cost, theta_0, theta_1, m, alpha, data)
+    gradient_result = gradient_descent(cost, prev_cost, theta_0, theta_1, m, alpha, data, max_iterations)
 
     # Printing theta_0 and theta_1
     theta_0 = round(gradient_result[0], 4)

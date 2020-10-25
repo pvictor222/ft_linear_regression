@@ -19,9 +19,9 @@ def sum_theta_1(theta_0, theta_1, data, m):
 #       1. on calcule prev_cost
 #   	2. on calcule le temp0 et temp1 simultanément
 #   	3. on assigne theta_0 et theta_1
-def gradient_descent(cost, prev_cost, theta_0, theta_1, m, alpha, data):
+def gradient_descent(cost, prev_cost, theta_0, theta_1, m, alpha, data, max_iterations):
     i = 0
-    while (cost != 0 and abs(cost - prev_cost) > 1):
+    while (cost != 0 and abs(cost - prev_cost) > 1e-5 and i < max_iterations ):
         prev_cost = sum([pow(theta_0 + (theta_1 * int(x[0])) - int(x[1]), 2) for x in data]) / (2 * m)
         temp0 = theta_0 - ((alpha / m) * sum_theta_0(theta_0, theta_1, data, m))
         temp1 = theta_1 - ((alpha / m) * sum_theta_1(theta_0, theta_1, data, m))

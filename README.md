@@ -14,4 +14,5 @@ BONUSES
 - Plotting the data into a graph to see their repartition
 - Plotting the linear regression into the graph
 - Calculating of the precision of the algorithm
-- Calcul du nombre d'itérations
+- Calculating the number of iterations
+- Asking the user what should be the maximum number of iterations
