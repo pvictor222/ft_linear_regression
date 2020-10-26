@@ -6,25 +6,23 @@ from src.data_visualisation import data_visualisation
 # initializing variables
 
 if __name__ == '__main__':
-    theta_0 = 1
+    theta_0 = 0
     theta_1 = 0
-    prev_cost = -1
-    cost = -3
-    alpha = 1
+    alpha = 0.000001
     # Read the data from "data.csv", remove first row and calculate m
     data = read_data("data.csv")
     data.pop(0)
     #mileages to delete?
-    mileages = [[1, x[0]] for x in data]
+    data = [[int(x), int(y)] for [x, y] in data]
     m = len(data)
     max_iterations = input("Enter the maximum number of iterations (1000 if not specified): ")
-    if max_iterations == '':
+    if (max_iterations == '' or max_iterations.isnumeric() == False):
         max_iterations = int(1000)
     else:
         max_iterations = int(max_iterations)
 
     # Gradient descent
-    gradient_result = gradient_descent(cost, prev_cost, theta_0, theta_1, m, alpha, data, max_iterations)
+    gradient_result = gradient_descent(theta_0, theta_1, m, alpha, data, max_iterations)
 
     # Printing theta_0 and theta_1
     theta_0 = round(gradient_result[0], 4)
