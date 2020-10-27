@@ -1,18 +1,14 @@
 # ft_linear_regression
 
-TODO
-**  Work
-- Vérifier que le gradient descent fonctionne bien
-- Bonus : Calcul de la précision de l'algorithme
-- Ajouter la gestion des erreurs (try / except Exception)
-**  Vérifications
-- Vérifier que les programmes fonctionnent bien comme le sujet
-- Cleaner le code
-- Documenter
+HOW IT WORKS
+1) "python3 model_training.py"
+==> Calculates theta_0 and theta_1 using gradient descent and stores it in theta.txt
+2) "python3 price_estimate.py"
+==> Asks the user for an a milage and returns an estimate of the price, based on theta_0 and theta_1 (both set to 0 before running model_training.py). The price can't be negative.
 
 BONUSES
 - Plotting the data into a graph to see their repartition
 - Plotting the linear regression into the graph
-- Calculating of the precision of the algorithm
-- Calculating the number of iterations
+- Calculating the cost of the model
 - Asking the user what should be the maximum number of iterations
+- Calculating the actual number of iterations

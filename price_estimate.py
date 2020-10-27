@@ -12,6 +12,11 @@ if __name__ == '__main__':
         theta_0 = 0
         theta_1 = 0
 
-    mileage = float(input("Enter mileage: "))
+    mileage = input("Enter mileage (0 if undefined): ")
+    if (mileage == '' or mileage.isnumeric() == False):
+        mileage = int(0)
+    else:
+        mileage = int(mileage)
 
-    print("The estimated price is : " + str(round(theta_0 + theta_1 * mileage)) + "$")
+    # The price cannot be negative
+    print("The estimated price for a car with a mileage of " + str(mileage) + "km is : " + str(max(round(theta_0 + theta_1 * mileage), 0)) + "$")
