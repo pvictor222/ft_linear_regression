@@ -1,3 +1,6 @@
+# import sources
+from src.normalization import normalize
+
 # import graphic libraries. Instal it with :
 #    python3 -m pip install -U pip
 #    python3 -m pip install -U matplotlib
