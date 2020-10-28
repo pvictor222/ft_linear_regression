@@ -6,8 +6,6 @@ HOW IT WORKS
 2) "python3 price_estimate.py"
 ==> Asks the user for an a milage and returns an estimate of the price, based on theta_0 and theta_1 (both set to 0 before running model_training.py). The price can't be negative.
 
-![Uploading Capture d’écran 2020-10-28 à 17.23.54.png…]()
-
 BONUSES
 - Plotting the data into a graph to see their repartition
 - Plotting the linear regression into the graph
