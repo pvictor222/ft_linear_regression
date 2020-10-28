@@ -1,6 +1,6 @@
 # ft_linear_regression
 
-HOW IT WORKS
+*How it works*
 1) "python3 model_training.py"
 ==> Calculates theta_0 and theta_1 using gradient descent and stores it in theta.txt
 2) "python3 price_estimate.py"
@@ -8,7 +8,7 @@ HOW IT WORKS
 
 ![images/Capture%20d’écran%202020-10-28%20à%2017.23.54.png](images/Capture%20d’écran%202020-10-28%20à%2017.23.54.png)
 
-BONUSES
+*Bonuses*
 - Plotting the data into a graph to see their repartition
 - Plotting the linear regression into the graph
 - Calculating the cost of the model
