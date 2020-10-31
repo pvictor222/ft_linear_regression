@@ -1,5 +1,7 @@
 # ft_linear_regression
 
+Project from 42 School
+
 *How it works*
 1) "python3 model_training.py"
 ==> Calculates theta_0 and theta_1 using gradient descent and stores it in theta.txt
